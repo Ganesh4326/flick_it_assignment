@@ -46,13 +46,13 @@ public class LoginActivity extends AppCompatActivity {
         String username = usernameEditText.getText().toString().trim();
         String password = passwordEditText.getText().toString().trim();
 
-        if (username.equals(DUMMY_USERNAME) && password.equals(DUMMY_PASSWORD)) {
-            Intent intent = new Intent(LoginActivity.this, UploadVideoActivity.class);
+//        if (username.equals(DUMMY_USERNAME) && password.equals(DUMMY_PASSWORD)) {
+            Intent intent = new Intent(LoginActivity.this, CameraOverlayAnimationActivity.class);
             startActivity(intent);
             finish();
-        } else {
-            Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show();
-        }
+//        } else {
+//            Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+//        }
     }
 
 
